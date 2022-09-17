@@ -40,10 +40,11 @@ h1{
 
 .slider__wrapper{
     max-height: 400px;
+    display:flex;
 }
 
 .slider__item img{
-    width: 100%;
+    width: 700px;
     max-height: 400px;
 }
 .count{
