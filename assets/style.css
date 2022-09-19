@@ -1,18 +1,20 @@
-*, *:before, *:after{
+*,
+*:before,
+*:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background: linear-gradient(90deg, rgb(37, 62, 59), rgb(200, 224, 255));
 }
 
-.container{
+.container {
     margin: 0 auto;
 }
 
-h1{
+h1 {
     text-align: center;
     color: rgb(50, 50, 50);
     font-size: 40px;
@@ -21,41 +23,74 @@ h1{
     font-weight: 700;
 }
 
-.slider__window{
+.slider__window {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.slider-prev{
+
+.slider-prev {
     margin-right: 20px;
+    cursor: pointer;
 }
 
-.slider-next{
+.slider-next {
     margin-left: 20px;
+    cursor: pointer;
 }
 
-.slider{
-    width:700px;
+.slider {
+    width: 700px;
 }
 
-.slider__wrapper{
+.slider__wrapper {
     max-height: 400px;
-    display:flex;
+    display: flex;
 }
 
-.slider__item img{
+.slider__item img {
     width: 700px;
     max-height: 400px;
 }
-.count{
+
+.count {
     margin: 50px auto;
     text-align: center;
 }
 
-.count div{
+.count div {
     display: inline-block;
     font-family: 'Kanit', sans-serif;
     font-size: 30px;
     color: rgb(50, 50, 50);
     font-weight: 300;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.dot {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 6px;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
 }
